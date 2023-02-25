@@ -42,12 +42,12 @@ function renderFavouriteList(favouritesArray) {
 }
 
 // Function: RENDER (add li-s to the list ul)
-function renderCocktails(cocktail) {
-  
+function renderCocktails(cocktail){
+ 
   let imgCocktail='';
   if(!cocktail.strDrinkThumb){
-    imgCocktail=`https://via.placeholder.com/600x400/ffffff/a0c3d2?text=Cocktail ${cocktail.strDrink}`;
-  } else {imgCocktail=cocktail.strDrinkThumb;}
+    imgCocktail=`https://via.placeholder.com/600x400/ffffff/a0c3d2?text=Cocktail ${cocktail.strDrink}`
+  } else imgCocktail=cocktail.strDrinkThumb;
 
 
   // DOM li and attributes
