@@ -1,24 +1,120 @@
 .page__main{
-    font-family: $font-main;
+    font-family: $font-kawaii;
     text-align: center;
-    .mainTitle{
-        color:red;
+    height:100vw;
+    background-color: #EAE0DA;
+    .searchStyle{
+        margin:15px;
+        border: none;
+        border-radius: 7px;
+        background-color: #F7F5EB;
+        height: 25px;
+        padding: 20px;
+        margin-bottom: 30px;   
     }
-    .ulStyles{
+    .searchButtonStyle{
+        padding: 13px;
+        margin:15px 0px;
+        border:none;
+        border-radius: 7px;
+        background-color: #b57d7d;
+        color: white;
+        
+    }
+    .resetStyle{
+        padding: 13px;
+        margin:15px 0px;
+        border:none;
+        border-radius: 7px;
+        background-color: #b57d7d;
+        color: white;
+
+    }
+    .mainTitle{
+
+        padding:50px 0px 0px 50px;
+        color: #b57d7d
+        
+        
+        
+    }
+    .sectionTitleAll{
+        padding:15px;
+        background-color:#A0C3D2;
+        color: #F7F5EB;
+    }
+    .ulStylesAll{
         text-decoration: none;
         list-style-type: none;
+        border: 3px solid #A0C3D2;
+        border-radius: 7px;
+        background-color: #F7F5EB;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 5px;
+        width: 35vw;
         li{
-            margin-top: 15px;
-            width:200px;
+            margin: 15px; 
+            width:150px;
+            background-color: #A0C3D2;
+            border-radius:10px;
+            padding-bottom:8px;
+            padding-top:10px;
             .cocktailImgStyle{
+                width: 130px;
+                border-radius:7px;
+            }
+            .cocktailTitle{
                 width: 150px;
-                border: 3px solid whitesmoke; 
+                color: #F7F5EB;
+                background-color: #A0C3D2;
+                font-weight: 300;
+                font-size: 15px;
             }
         }
         .selected{
-            background-color: turquoise;
-            padding:5px;
+            background-color: #EAC7C7;
+            .cocktailTitle{
+                width: 150px;
+               
+                background-color: #EAC7C7;
+            }
         }
         
+    }
+    .sectionTitleFav{
+        padding:15px;
+        background-color:#EAC7C7;
+        color: #F7F5EB
+    }
+    .ulStylesFav{
+        text-decoration: none;
+        list-style-type: none;
+        border: 3px solid #EAC7C7;
+        background-color: #F7F5EB;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 5px;
+        width: 35vw;
+        li{
+            margin: 15px;
+            padding-top:10px;
+            width:150px;
+            background-color: #EAC7C7;
+            border-radius:10px;
+            color: #F7F5EB;
+            padding-bottom:4px;
+            .cocktailImgStyle{
+                width: 130px;
+                border-radius:7px;
+                
+            }
+            .cocktailTitle{
+                width: 150px;
+                font-weight: 300;
+                font-size: 15px;
+                background-color: #EAC7C7;
+            }
+        }      
     }
 }
