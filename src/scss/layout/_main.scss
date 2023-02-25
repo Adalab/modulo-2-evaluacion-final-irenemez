@@ -1,8 +1,24 @@
-.cocktailLiStyle{
-    text-decoration: none;
-    list-style-type: none;
-}
-.cocktailImgStyle{
-    width: 150px;
-    border: 3px solid whitesmoke;
+.page__main{
+    font-family: $font-main;
+    text-align: center;
+    .mainTitle{
+        color:red;
+    }
+    .ulStyles{
+        text-decoration: none;
+        list-style-type: none;
+        li{
+            margin-top: 15px;
+            width:200px;
+            .cocktailImgStyle{
+                width: 150px;
+                border: 3px solid whitesmoke; 
+            }
+        }
+        .selected{
+            background-color: turquoise;
+            padding:5px;
+        }
+        
+    }
 }
