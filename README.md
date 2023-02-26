@@ -16,6 +16,14 @@ Irene Mezquita Yarza | [@irenemez](https://www.github.com/irenemez)
 
 **Assignment outcome:** every basic section is covered, with the bonus of adding styling in SCSS.
 
+## API Reference
+
+#### The Cockail DB
+
+```http
+  www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+```
+
 ## Color Reference
 
 | Color      | Hex                                                              |
@@ -25,21 +33,6 @@ Irene Mezquita Yarza | [@irenemez](https://www.github.com/irenemez)
 | lollipop   | ![#b57d7d](https://via.placeholder.com/10/b57d7d?text=+) #b57d7d |
 | pastelBlue | ![#A0C3D2](https://via.placeholder.com/10/A0C3D2?text=+) #A0C3D2 |
 | pastelPink | ![#EAC7C7](https://via.placeholder.com/10/EAC7C7?text=+) #EAC7C7 |
-
-## API Reference
-
-#### The Cockail DB
-
-```http
-  www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
-```
-
-## External resources
-
-- [MDN Web Docs](https://developer.mozilla.org/es/): code syntax.
-- [Color Hunt](https://colorhunt.co/): color palette resource.
-- [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project): readMe documentation.
-- [Awesome README](https://github.com/matiassingers/awesome-readme): readMe generator.
 
 ## Tech Stack
 
@@ -54,6 +47,13 @@ Irene Mezquita Yarza | [@irenemez](https://www.github.com/irenemez)
 **Text editor interface:** Visual Studio Code
 
 **External code:** [Adalab Web Starter Kit](https://github.com/Adalab/Adalab-web-starter-kit)- prewritten code set created by [Adalab](https://adalab.es/).
+
+## External resources
+
+- [MDN Web Docs](https://developer.mozilla.org/es/): code syntax.
+- [Color Hunt](https://colorhunt.co/): color palette resource.
+- [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project): readMe documentation.
+- [Awesome README](https://github.com/matiassingers/awesome-readme): readMe generator.
 
 ## Feedback
 

@@ -2,65 +2,65 @@
     font-family: $font-kawaii;
     text-align: center;
     height:100vw;
-    background-color: #EAE0DA;
+    background-color: $lightGray;
     .searchStyle{
         margin:15px;
-        border: 2px solid #F7F5EB;
+        border: 2px solid $lightCream;
         border-radius: 7px;
-        background-color: #F7F5EB;
+        background-color: $lightCream;
         height: 25px;
         padding: 20px;
         margin-bottom: 30px;  
         &:hover {
-            border: 2px solid #b57d7d;
+            border: 2px solid $lollipop;
         } 
     }
     .searchButtonStyle{
         padding: 12px;
         margin:15px 0px;
-        border: 2px solid #b57d7d;
+        border: 2px solid $lollipop;
         border-radius: 7px;
-        background-color: #b57d7d;
-        color: white;
+        background-color: $lollipop;
+        color: $lightCream;
         cursor:pointer;
         &:hover {
-            border: 2px solid #F7F5EB;
+            border: 2px solid $lightCream;
         }
     }
     .resetStyle{
         padding: 12px;
         margin:15px 0px;
-        border: 2px solid #b57d7d;
+        border: 2px solid $lollipop;
         border-radius: 7px;
-        background-color: #b57d7d;
-        color: white;
+        background-color: $lollipop;
+        color: $lightCream;
         cursor:pointer;
         &:hover {
-            border: 2px solid #F7F5EB;
+            border: 2px solid $lightCream;
         }
     }
 
 
     .mainTitle{
         padding:50px 0px 0px 50px;
-        color: #b57d7d;
+        color: $lollipop;
     }
     .sectionAll{
         border-radius:200px;
         
         .sectionTitleAll{
             padding:15px;
-            background-color:#A0C3D2;
-            color: #F7F5EB;
+            background-color: $pastelBlue;
+            color: $lightCream;
        
             
         }
         .ulStylesAll{
             text-decoration: none;
             list-style-type: none;
-            border: 3px solid #A0C3D2;
+            border: 3px solid $pastelBlue;
       
-            background-color: #F7F5EB;
+            background-color: $lightCream;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             grid-gap: 5px;
@@ -69,7 +69,7 @@
             li{
                 margin: 15px; 
                 width:150px;
-                background-color: #A0C3D2;
+                background-color: $pastelBlue;
                 border-radius:10px;
                 padding-bottom:8px;
                 padding-top:10px;
@@ -81,18 +81,18 @@
                 }
                 .cocktailTitle{
                     width: 150px;
-                    color: #F7F5EB;
-                    background-color: #A0C3D2;
+                    color: $lightCream;
+                    background-color: $pastelBlue;
                     font-weight: 300;
                     font-size: 15px;
                 }
             }
             .selected{
-                background-color: #EAC7C7;
+                background-color: $pastelPink;
                 .cocktailTitle{
                     width: 150px;
                 
-                    background-color: #EAC7C7;
+                    background-color: $pastelPink;
                 }
             }
             
@@ -101,14 +101,14 @@
     .sectionFav{
         .sectionTitleFav{
             padding:15px;
-            background-color:#EAC7C7;
-            color: #F7F5EB;
+            background-color:$pastelPink;
+            color: $lightCream;
         }
         .ulStylesFav{
             text-decoration: none;
             list-style-type: none;
-            border: 3px solid #EAC7C7;
-            background-color: #F7F5EB;
+            border: 3px solid $pastelPink;
+            background-color: $lightCream;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             grid-gap: 5px;
@@ -117,9 +117,9 @@
                 margin: 15px;
                 padding-top:10px;
                 width:150px;
-                background-color: #EAC7C7;
+                background-color: $pastelPink;
                 border-radius:10px;
-                color: #F7F5EB;
+                color: $lightCream;
                 padding-bottom:4px;
                 .cocktailImgStyle{
                     width: 130px;
@@ -130,7 +130,7 @@
                     width: 150px;
                     font-weight: 300;
                     font-size: 15px;
-                    background-color: #EAC7C7;
+                    background-color: $pastelPink;
                 }
             }      
         }

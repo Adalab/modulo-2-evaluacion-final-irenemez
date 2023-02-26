@@ -11,6 +11,15 @@ let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
 let cocktailsArray=[];
 let favouritesArray=[];
 
+
+// Restore local storage info
+const localFavourites = JSON.parse(localStorage.getItem('localFavourites'));
+if (localFavourites) {
+  favouritesArray = localFavourites;
+  renderFavouriteList(favouritesArray);
+}
+
+
 // -------------------ACCESS API-------------------
 fetch(url)
   .then((response) => response.json())
@@ -38,7 +47,9 @@ function renderFavouriteList(favouritesArray) {
     cocktailFavourites.appendChild(renderCocktails(cocktail)); 
     setListener();
   }
+  localStorage.setItem('localFavourites', JSON.stringify(favouritesArray));
 }
+
 
 // Function: RENDER (add li-s to the list ul)
 function renderCocktails(cocktail){
@@ -93,7 +104,6 @@ function handleSearch(event){
 function handleReset(){
   console.log('hola 1');
   url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita`;
-  console.log('hola 2');
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
@@ -104,6 +114,9 @@ function handleReset(){
     }
     );
   searchText.value = '';
+  cocktailFavourites.innerHTML = '';
+  localStorage.removeItem('localFavourites');
+  location.reload();
 }
 
 // Favourite button
