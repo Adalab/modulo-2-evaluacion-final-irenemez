@@ -7,10 +7,9 @@ const resetButton = document.querySelector('.js-resetButton');
 const cocktailList = document.querySelector('.js-cocktailList');
 const cocktailFavourites = document.querySelector('.js-cocktailFavourites');
 let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
-// Create an array to add items
+// Create arrays to add items
 let cocktailsArray=[];
 let favouritesArray=[];
-
 
 // -------------------ACCESS API-------------------
 fetch(url)
