@@ -8,13 +8,15 @@ Irene Mezquita Yarza | [@irenemez](https://www.github.com/irenemez)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/irenemez/)
 
-## About this project
+## About
+
+**This project:** This project's goal is to create a page in which it is possible to visualize elements of a third-party API, as well as creating an interface that makes it possible to operate with them.
 
 **Challenges:** the main challenge faced in this project was the joint implementation of every new added code parts without disrupting the existing code. For this, separate functions and events were created.
 
 **Pending:** bonus section #1 and improving existing code from already completed sections from the assignment.
 
-**Assignment outcome:** every basic section is covered, with the bonus of adding styling in SCSS.
+**Assignment outcome:** assignment's every basic section has been covered, along with the optional bonus of adding styling in SCSS.
 
 ## API Reference
 
@@ -57,4 +59,4 @@ Irene Mezquita Yarza | [@irenemez](https://www.github.com/irenemez)
 
 ## Feedback
 
-If you have any feedback, please reach out at irenemezyar@gmail.com
+Should you have any feedback, please reach out at irenemezyar@gmail.com

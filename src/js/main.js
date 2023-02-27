@@ -57,7 +57,6 @@ function renderCocktails(cocktail, className ){
     imgCocktail=`https://via.placeholder.com/600x400/ffffff/a0c3d2?text=Cocktail ${cocktail.strDrink}`;
   } else imgCocktail=cocktail.strDrinkThumb;
 
-
   // DOM li and attributes
   const cocktailLi= document.createElement('li');
   cocktailLi.classList.add('cocktailLiStyle');
