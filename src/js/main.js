@@ -19,7 +19,6 @@ if (localFavourites) {
   renderFavouriteList(favouritesArray);
 }
 
-
 // -------------------ACCESS API-------------------
 fetch(url)
   .then((response) => response.json())
@@ -36,7 +35,7 @@ fetch(url)
 function renderCocktailList(cocktailsArray) {
   cocktailList.innerHTML = '';
   for (const cocktail of cocktailsArray){
-    cocktailList.appendChild(renderCocktails(cocktail)); 
+    cocktailList.appendChild(renderCocktails(cocktail, 'js-cocktailElement')); 
     setListener();
   }
 }
@@ -44,39 +43,46 @@ function renderCocktailList(cocktailsArray) {
 function renderFavouriteList(favouritesArray) {
   cocktailFavourites.innerHTML = '';
   for (const cocktail of favouritesArray){
-    cocktailFavourites.appendChild(renderCocktails(cocktail)); 
+    cocktailFavourites.appendChild(renderCocktails(cocktail, 'js-fav')); 
     setListener();
   }
   localStorage.setItem('localFavourites', JSON.stringify(favouritesArray));
 }
 
-
 // Function: RENDER (add li-s to the list ul)
-function renderCocktails(cocktail){
+function renderCocktails(cocktail, className ){
  
   let imgCocktail='';
   if(!cocktail.strDrinkThumb){
-    imgCocktail=`https://via.placeholder.com/600x400/ffffff/a0c3d2?text=Cocktail ${cocktail.strDrink}`
+    imgCocktail=`https://via.placeholder.com/600x400/ffffff/a0c3d2?text=Cocktail ${cocktail.strDrink}`;
   } else imgCocktail=cocktail.strDrinkThumb;
 
 
   // DOM li and attributes
   const cocktailLi= document.createElement('li');
-  cocktailLi.setAttribute('class', 'cocktailLiStyle');
-  cocktailLi.setAttribute('class', 'js-cocktailElement');
+  cocktailLi.classList.add('cocktailLiStyle');
+
+
+  const indexCocktail = favouritesArray.findIndex((favourite) => favourite.idDrink === cocktail.idDrink);
+  if (indexCocktail !== -1){
+    cocktailLi.classList.add('selected');
+  } 
+
+  cocktailLi.classList.add(className);
   cocktailLi.setAttribute('id', cocktail.idDrink);
+  
   // DOM article
   const cocktailArticle = document.createElement('article');
   cocktailLi.appendChild(cocktailArticle);
   // DOM image
   const cocktailImg = document.createElement('img');
-  cocktailImg.setAttribute('class', 'cocktailImgStyle');
+  cocktailImg.classList.add('cocktailImgStyle');
   cocktailImg.setAttribute('src', imgCocktail);
   cocktailImg.setAttribute('alt', 'Cocktail picture');
   cocktailArticle.appendChild(cocktailImg);
   // DOM title
   const cocktailTitle = document.createElement('h3');
-  cocktailTitle.setAttribute('class', 'cocktailTitle');
+  cocktailTitle.classList.add('cocktailTitle');
   const cocktailTitleText = document.createTextNode(`${cocktail.strDrink}`);
   cocktailTitle.appendChild(cocktailTitleText);
   cocktailLi.appendChild(cocktailTitle);
