@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cocktail search</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="page__header">
+
+      </header>
+
+      <main class="page__main">
+        <h1 class="mainTitle ">Cocktail search</h1>
+        <form>
+          <input type="search" placeholder="Search a cocktail" class="js-searchText searchStyle" value="">
+          <input type="button" class="js-searchButton searchButtonStyle" value="Search">
+          <input type="button" class="js-resetButton resetStyle" value="Reset">
+        </form>
+        <section class="listSection">
+          <div class="sectionAll">
+            <h2 class="sectionTitleAll">All cocktails</h2>
+            <ul class="js-cocktailList ulStylesAll">
+
+            </ul>
+          </div>
+          <div class="sectionFav">
+            <h2 class="sectionTitleFav">Favourites</h2>
+            <ul class="js-cocktailFavourites ulStylesFav">
+
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page__footer">
+
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
